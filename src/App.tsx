@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {SnackbarProvider} from "notistack";
+import {Provider} from "react-redux";
+import {persist, store} from "./redux";
+import {PersistGate} from "redux-persist/integration/react";
+import {notyStackRef} from "./utils";
+import {BrowserRouter, Switch} from "react-router-dom";
+import {ROUTES} from "./routes/routes";
+import SubRoute from "./routes/SubRoute";
+import ThemeProviderGeneral from "./themes/ThemeProviderGeneral";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Provider store={store}>
+            <PersistGate persistor={persist}>
+                <SnackbarProvider maxSnack={3} ref={notyStackRef}>
+                    <ThemeProviderGeneral>
+                        <BrowserRouter>
+                            <Switch>
+                                {ROUTES.map((route, i) => <SubRoute key={i} {...route}/>)}
+                            </Switch>
+                        </BrowserRouter>
+                    </ThemeProviderGeneral>
+                </SnackbarProvider>
+            </PersistGate>
+        </Provider>
+    );
 }
 
 export default App;
