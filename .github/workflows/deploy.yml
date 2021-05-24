@@ -24,4 +24,5 @@ jobs:
       - name: deploy the app
         run: yarn deploy
         env:
+          REACT_APP_URL: ${{ secrets.REACT_APP_URL }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
