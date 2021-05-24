@@ -2,6 +2,7 @@
   "name": "e-comerse-admin",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://miguelmorales13.github.io/e-commers-admin",
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
@@ -37,7 +38,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build -r https://$GH_TOKEN@github.com/miguelmorales13/movies-api-omdb"
+    "deploy": "gh-pages -d build -r https://$GH_TOKEN@github.com/miguelmorales13/e-commers-admin"
   },
   "eslintConfig": {
     "extends": [
