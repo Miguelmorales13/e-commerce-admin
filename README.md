@@ -7,7 +7,7 @@ This app is front End application for administration to e-comerse 🤑 💲
 ## Modules
 
 * Users 🚶‍♂️
-    * you can administrate acces to managamaneto your e-commerse
+    * you can administrate your e-commerse
 * Clients 👤
     * You can add a clients
 * Categories products 🎇
