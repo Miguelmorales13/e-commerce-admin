@@ -25,7 +25,7 @@ export interface IInput<T = any, Option = any> {
     configInput: T
 }
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
     root: {
         height: '100%',
         width: '100%',
@@ -52,11 +52,15 @@ const FormFlex: FunctionComponent<Props> = ({schema, initialValues, inputs, hand
             formik.resetForm()
         }
     })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const handleInit = () => {
+        formik.setValues(initialValues)
+
+    }
 
     useEffect(() => {
-        formik.setValues(initialValues)
-        // @ts-ignore
-    }, [initialValues])
+        handleInit()
+    }, [handleInit])
     let propsInput = {
         setFieldValue: formik.setFieldValue,
         getFieldProps: formik.getFieldProps,

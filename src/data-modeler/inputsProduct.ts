@@ -5,29 +5,8 @@ import {EnumColumnTable} from "./index";
 import {IProduct} from "../models/IProduct.model";
 import {ICategoryProduct} from "../models/ICategoryProduct.model";
 
-const buttons = (onClickReset: Function, textSave: string) => [
-    {
-        name: 'button',
-        label: 'Cancel',
-        type: EnumInput.Button,
-        configField: {xs: 6, p: 0.5},
-        configInput: {
-            type: 'reset',
-            onClick: onClickReset,
-            color: 'secondary'
-        }
-    }, {
-        name: 'button',
-        label: textSave,
-        type: EnumInput.Button,
-        configField: {xs: 6, p: 0.5},
-        configInput: {
-            type: 'submit',
-            color: 'primary'
-        }
-    },
-]
-export const inputsProduct = (options: ICategoryProduct[], classes: any, onClickReset: Function): IInput<any>[] => [
+
+export const inputsProduct = (options: ICategoryProduct[], classes: any, onClickReset: Function): IInput<any, ICategoryProduct>[] => [
     {
         name: 'name',
         label: 'Name',
@@ -105,7 +84,7 @@ export const inputsProduct = (options: ICategoryProduct[], classes: any, onClick
         }
     },
 ]
-export const inputsImageProduct = (handleClose: Function, onClickReset: Function): IInput<any>[] => [
+export const inputsImageProduct = (handleClose: Function, onClickReset: Function): IInput[] => [
     {
         name: 'title',
         label: "Title",

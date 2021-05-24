@@ -60,7 +60,7 @@ const DropInput: FunctionComponent<Props> = ({src, name, label, setFieldValue}) 
     const onDrop = useCallback((acceptedFiles) => {
         setFile(acceptedFiles[0])
         setFieldValue(name, acceptedFiles[0])
-    }, [])
+    }, [name, setFieldValue])
     const {getRootProps, getInputProps, isDragActive} = useDropzone({onDrop, accept: ['image/png', 'image/jpeg', 'image/gif'], maxFiles: 1, multiple: false})
     const classes = useStyles()
     const noContent = (

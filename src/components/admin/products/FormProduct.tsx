@@ -64,7 +64,7 @@ const FormProduct: FunctionComponent<Props> = ({open, setOpen}) => {
     const handleCancelImage = () => setImage({})
     useEffect(() => {
         dispatch(CategoryProductActions.getAll())
-    }, [])
+    }, [dispatch])
 
     const handleSubmit = (values: IProduct) => {
         const {id} = selectedProduct
