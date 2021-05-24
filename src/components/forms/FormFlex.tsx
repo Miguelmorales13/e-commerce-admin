@@ -52,15 +52,11 @@ const FormFlex: FunctionComponent<Props> = ({schema, initialValues, inputs, hand
             formik.resetForm()
         }
     })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    const handleInit = () => {
-        formik.setValues(initialValues)
-
-    }
 
     useEffect(() => {
-        handleInit()
-    }, [handleInit])
+        formik.setValues(initialValues)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
     let propsInput = {
         setFieldValue: formik.setFieldValue,
         getFieldProps: formik.getFieldProps,
