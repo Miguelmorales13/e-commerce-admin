@@ -16,7 +16,7 @@ function App() {
             <PersistGate persistor={persist}>
                 <SnackbarProvider maxSnack={3} ref={notyStackRef}>
                     <ThemeProviderGeneral>
-                        <BrowserRouter>
+                        <BrowserRouter basename={process.env.PUBLIC_URL}>
                             <Switch>
                                 {ROUTES.map((route, i) => <SubRoute key={i} {...route}/>)}
                             </Switch>
