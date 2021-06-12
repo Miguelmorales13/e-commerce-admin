@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/e-commers-admin/static/css/main.0c54cb6d.chunk.css",
-    "main.js": "/e-commers-admin/static/js/main.904ea0cb.chunk.js",
-    "main.js.map": "/e-commers-admin/static/js/main.904ea0cb.chunk.js.map",
+    "main.css": "/e-commers-admin/static/css/main.0edd4db5.chunk.css",
+    "main.js": "/e-commers-admin/static/js/main.f2b8b128.chunk.js",
+    "main.js.map": "/e-commers-admin/static/js/main.f2b8b128.chunk.js.map",
     "runtime-main.js": "/e-commers-admin/static/js/runtime-main.526a9e93.js",
     "runtime-main.js.map": "/e-commers-admin/static/js/runtime-main.526a9e93.js.map",
     "static/js/2.7e992e44.chunk.js": "/e-commers-admin/static/js/2.7e992e44.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.f4d57030.chunk.js": "/e-commers-admin/static/js/3.f4d57030.chunk.js",
     "static/js/3.f4d57030.chunk.js.map": "/e-commers-admin/static/js/3.f4d57030.chunk.js.map",
     "index.html": "/e-commers-admin/index.html",
-    "static/css/main.0c54cb6d.chunk.css.map": "/e-commers-admin/static/css/main.0c54cb6d.chunk.css.map",
+    "static/css/main.0edd4db5.chunk.css.map": "/e-commers-admin/static/css/main.0edd4db5.chunk.css.map",
     "static/js/2.7e992e44.chunk.js.LICENSE.txt": "/e-commers-admin/static/js/2.7e992e44.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.526a9e93.js",
     "static/js/2.7e992e44.chunk.js",
-    "static/css/main.0c54cb6d.chunk.css",
-    "static/js/main.904ea0cb.chunk.js"
+    "static/css/main.0edd4db5.chunk.css",
+    "static/js/main.f2b8b128.chunk.js"
   ]
 }
