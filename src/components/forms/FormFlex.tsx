@@ -56,18 +56,20 @@ const FormFlex: FunctionComponent<Props> = ({schema, initialValues, inputs, hand
     useEffect(() => {
         formik.setValues(initialValues)
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+    }, [initialValues])
     let propsInput = {
         setFieldValue: formik.setFieldValue,
         getFieldProps: formik.getFieldProps,
         handleChange: formik.handleChange,
     }
     return (
-        <Grid container component="form" className={classes.root} onReset={formik.handleReset} onSubmit={formik.handleSubmit}>
+        <Grid container component="form" className={classes.root} onReset={formik.handleReset}
+              onSubmit={formik.handleSubmit}>
             {
                 inputs.map((props, i) => (
                     <Grid item key={i} component={Box} p={0.5} {...props.configField}>
-                        <FormInput value={formik.values[props.name]} errors={formik.errors[props.name]} touched={formik.touched[props.name]} {...props} {...propsInput}/>
+                        <FormInput value={formik.values[props.name]} errors={formik.errors[props.name]}
+                                   touched={formik.touched[props.name]} {...props} {...propsInput}/>
                     </Grid>
                 ))
             }
