@@ -1,21 +1,10 @@
-# E-COMMERSE React app
+# E-COMMERCE adminsitrator
 
-## Description
+## Environments
 
-This app is front End application for administration to e-comerse 🤑 💲
+you need file .env
 
-## Modules
-
-* Users 🚶‍♂️
-    * you can administrate your e-commerse
-* Clients 👤
-    * You can add a clients
-* Categories products 🎇
-    * You can administration categories with subcategories to organisate products
-* Products 🎉
-    * You can upload a main image and multiples images
-    * You can add news products with discount
-
-## Connections with
-
-This app is connected width this [API](https://e-commerse-api.herokuapp.com/api/) 
+```dotenv
+NODE_ENV=dev
+REACT_APP_URL=http://localhost:3001/ # this is url api to connect
+```
