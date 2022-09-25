@@ -10,20 +10,11 @@ export enum EnumAuthReducers {
 export const AuthReducer = (state: IAuthState = AuthState, {payload, type}: IAction<EnumAuthReducers, any>): IAuthState => {
     switch (type) {
         case EnumAuthReducers.SetLoader:
-            return {
-                ...state,
-                loading: payload
-            }
+            return {...state, loading: payload}
         case EnumAuthReducers.SetToken:
-            return {
-                ...state,
-                token: payload
-            }
+            return {...state, token: payload}
         case EnumAuthReducers.SetUser:
-            return {
-                ...state,
-                user: payload
-            }
+            return {...state, user: payload}
         default:
             return state
     }

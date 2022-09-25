@@ -28,19 +28,13 @@ const useStyles = makeStyles((theme) => ({
         overflow: 'auto',
         margin: 0,
     },
-    container: {
-        paddingTop: theme.spacing(4),
-        paddingBottom: theme.spacing(4),
-    },
+
     paper: {
         padding: theme.spacing(0.5),
         height: '100%',
         display: 'flex',
         overflow: 'auto',
         flexDirection: 'column',
-    },
-    fixedHeight: {
-        height: 240,
     },
     footer: {
         padding: theme.spacing(1),
@@ -66,7 +60,6 @@ const AdminPage: FunctionComponent<Props> = ({routes}) => {
     useEffect(() => {
         setOpen(!isDevice)
     }, [isDevice])
-    // const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
     return (
         <div className={classes.root}>
@@ -76,7 +69,6 @@ const AdminPage: FunctionComponent<Props> = ({routes}) => {
             <main className={classes.content}>
                 <div className={classes.appBarSpacer}/>
                 <Box p={1} height={"100%"}>
-                    {/*<Paper className={classes.paper} variant="outlined">*/}
                     <Switch>
                         {
                             routes && routes.map((route, i) => (
@@ -85,7 +77,6 @@ const AdminPage: FunctionComponent<Props> = ({routes}) => {
                         }
                     </Switch>
 
-                    {/*</Paper>*/}
 
                 </Box>
                 <footer className={classes.footer}>

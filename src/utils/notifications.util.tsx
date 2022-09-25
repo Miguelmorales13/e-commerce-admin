@@ -10,6 +10,7 @@ export enum EnumNotification {
     Warning = 'warning',
 }
 
+
 export function genNoty(msg: string, typo: EnumNotification = EnumNotification.Success) {
     notyStackRef?.current?.enqueueSnackbar(msg, {variant: typo})
 
