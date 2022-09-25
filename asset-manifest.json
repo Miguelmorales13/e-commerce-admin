@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/e-commerce-admin/static/css/main.0edd4db5.chunk.css",
-    "main.js": "/e-commerce-admin/static/js/main.a61d9cc0.chunk.js",
-    "main.js.map": "/e-commerce-admin/static/js/main.a61d9cc0.chunk.js.map",
+    "main.css": "/e-commerce-admin/static/css/main.2b8b9baf.chunk.css",
+    "main.js": "/e-commerce-admin/static/js/main.6816077f.chunk.js",
+    "main.js.map": "/e-commerce-admin/static/js/main.6816077f.chunk.js.map",
     "runtime-main.js": "/e-commerce-admin/static/js/runtime-main.dda03b67.js",
     "runtime-main.js.map": "/e-commerce-admin/static/js/runtime-main.dda03b67.js.map",
-    "static/js/2.3d5096a2.chunk.js": "/e-commerce-admin/static/js/2.3d5096a2.chunk.js",
-    "static/js/2.3d5096a2.chunk.js.map": "/e-commerce-admin/static/js/2.3d5096a2.chunk.js.map",
+    "static/js/2.23b51429.chunk.js": "/e-commerce-admin/static/js/2.23b51429.chunk.js",
+    "static/js/2.23b51429.chunk.js.map": "/e-commerce-admin/static/js/2.23b51429.chunk.js.map",
     "static/js/3.f4d57030.chunk.js": "/e-commerce-admin/static/js/3.f4d57030.chunk.js",
     "static/js/3.f4d57030.chunk.js.map": "/e-commerce-admin/static/js/3.f4d57030.chunk.js.map",
     "index.html": "/e-commerce-admin/index.html",
-    "static/css/main.0edd4db5.chunk.css.map": "/e-commerce-admin/static/css/main.0edd4db5.chunk.css.map",
-    "static/js/2.3d5096a2.chunk.js.LICENSE.txt": "/e-commerce-admin/static/js/2.3d5096a2.chunk.js.LICENSE.txt"
+    "static/css/main.2b8b9baf.chunk.css.map": "/e-commerce-admin/static/css/main.2b8b9baf.chunk.css.map",
+    "static/js/2.23b51429.chunk.js.LICENSE.txt": "/e-commerce-admin/static/js/2.23b51429.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.dda03b67.js",
-    "static/js/2.3d5096a2.chunk.js",
-    "static/css/main.0edd4db5.chunk.css",
-    "static/js/main.a61d9cc0.chunk.js"
+    "static/js/2.23b51429.chunk.js",
+    "static/css/main.2b8b9baf.chunk.css",
+    "static/js/main.6816077f.chunk.js"
   ]
 }
